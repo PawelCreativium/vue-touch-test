@@ -1,0 +1,99 @@
+.draggable-list {
+  background: #c04b47;
+  color: #fff;
+  border: 1px solid;
+  padding: 30px;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.between-draggable-list {
+  width: 100%;
+  height: 20px;
+
+  &.top {
+    top: 0;
+  }
+
+  &.bottom {
+    bottom: 0;
+  }
+
+  &.border-draggable {
+    border: 1px dashed #d1d5d8;
+    font-size: 12px;
+    color: rbga(255, 255, 255, 0.7);
+  }
+}
+
+.draggable-list.drag-hover {
+  background: #f32e27;
+}
+
+.list-item {
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  background: #3672f4;
+  display: inline-block;
+}
+
+.show-children {
+  position: absolute;
+  bottom: 0;
+  height: 25%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.draggable-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.pointers-none {
+  pointer-events: none;
+}
+
+.drag-bg-white {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.drag-bg-purple {
+  background-color: rgba(131, 3, 131, 0.2);
+  transition: all 0.3s;
+}
+
+.fade-in {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.spread-height {
+  animation: spreadheight 0.5s;
+}
+
+@keyframes spreadheight {
+  from {
+    height: 10px;
+  }
+  to {
+    opacity: 20px;
+  }
+}
+
+.break-word {
+  overflow-wrap: anywhere;
+}
